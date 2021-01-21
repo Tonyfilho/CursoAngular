@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PostCompomentComponent } from './post-compoment/post-compoment.component';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostCompomentComponent
+    PostCompomentComponent,
+    GithubFollowersComponent
   ],
   imports: [
     BrowserModule,

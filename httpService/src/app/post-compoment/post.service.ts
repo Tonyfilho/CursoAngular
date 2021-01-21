@@ -1,18 +1,22 @@
-import { HttpClient,  } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { pipe } from 'rxjs';
 
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PostService {
- private readonly JSONGETPOST: string = `https://jsonplaceholder.typicode.com/posts`;
+  private readonly JSONGETPOST: string = `https://jsonplaceholder.typicode.com/posts`;
+  private readonly URLGITFOLLOWERS: string = `https://api.github.com/users/mosh-hamedani/followers`;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getJson(){
+  getJson() {
     return this.http.get(this.JSONGETPOST);
   }
 
-
+  getFollowers() {
+    return this.http.get(this.URLGITFOLLOWERS);
+  }
 }

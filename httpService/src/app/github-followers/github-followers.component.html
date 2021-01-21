@@ -1,0 +1,9 @@
+<p>github-followers works!</p>
+
+<div class="media" *ngFor="let item of followersArray">
+  <img src="{{ item.avatar_url }}" class="mr-3 avatar" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0"> {{ item.login }}</h5>
+    <a href="item.html_url"> {{ item.html_url }}</a>
+  </div>
+</div>
