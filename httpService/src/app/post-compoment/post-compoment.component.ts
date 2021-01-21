@@ -22,7 +22,7 @@ export class PostCompomentComponent implements OnInit {
     this.service.getJson().subscribe(
       (data: Post[]) => { data.forEach(item => {this.post.push(item)})
       },
-      (error) => console.error(error),
+      (error: Response) => console.error(error.status),
       () => console.log('Data subscribe done!')
       );
       console.log(this.post, "nosso Post 2");

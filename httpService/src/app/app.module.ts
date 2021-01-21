@@ -16,7 +16,7 @@ import { PostCompomentComponent } from './post-compoment/post-compoment.componen
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
